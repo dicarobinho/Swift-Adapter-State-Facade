@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     @IBOutlet weak var sportBikeLabel: UILabel!
     @IBOutlet weak var nakedBikeLabel: UILabel!
     @IBOutlet weak var scooterLabel: UILabel!
+    @IBOutlet weak var adaptButton: UIButton!
+    
+    private var readyToRace = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +28,20 @@ class ViewController: UIViewController {
         scooterLabel.text = "\(scooter.doRace())\n HP: \(scooter.HP)"
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        adaptButton.setTitle("Adapt scooter for race", for: .normal)
+    }
+    
     @IBAction func adaptScooterHP(_ sender: Any) {
-        let scooter = Scooter()
-        scooterLabel.text = "\(ScooterAdapter(scooter).doRace())\n HP: \(scooter.HP)"
+        if readyToRace {
+            performSegue(withIdentifier: "GoToRace", sender: nil)
+        } else {
+            let scooter = Scooter()
+            scooterLabel.text = "\(ScooterAdapter(scooter).doRace())\n HP: \(scooter.HP)"
+            adaptButton.setTitle("Let's race", for: .normal)
+            readyToRace = true
+        }
     }
 }
 

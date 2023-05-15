@@ -9,20 +9,27 @@
 /* Begin PBXBuildFile section */
 		7BC3C59A2A0B9696007F61C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5992A0B9696007F61C9 /* AppDelegate.swift */; };
 		7BC3C59C2A0B9696007F61C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C59B2A0B9696007F61C9 /* SceneDelegate.swift */; };
-		7BC3C59E2A0B9696007F61C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C59D2A0B9696007F61C9 /* ViewController.swift */; };
+		7BC3C59E2A0B9696007F61C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C59D2A0B9696007F61C9 /* MainViewController.swift */; };
 		7BC3C5A12A0B9696007F61C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC3C59F2A0B9696007F61C9 /* Main.storyboard */; };
 		7BC3C5A32A0B9696007F61C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC3C5A22A0B9696007F61C9 /* Assets.xcassets */; };
 		7BC3C5A62A0B9696007F61C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC3C5A42A0B9696007F61C9 /* LaunchScreen.storyboard */; };
 		7BC3C5AE2A0BAF2C007F61C9 /* Motorcycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5AD2A0BAF2C007F61C9 /* Motorcycles.swift */; };
 		7BC3C5B02A0BB058007F61C9 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5AF2A0BB058007F61C9 /* Adapter.swift */; };
 		7BC3C5B22A0CFADD007F61C9 /* Adaptee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5B12A0CFADD007F61C9 /* Adaptee.swift */; };
+		7BC3C5B62A12498C007F61C9 /* Race.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC3C5B52A12498C007F61C9 /* Race.storyboard */; };
+		7BC3C5B82A1249AB007F61C9 /* RaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5B72A1249AB007F61C9 /* RaceViewController.swift */; };
+		7BC3C5BA2A124E90007F61C9 /* MotorcycleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5B92A124E90007F61C9 /* MotorcycleProtocol.swift */; };
+		7BC3C5BC2A124ED1007F61C9 /* MotorcycleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5BB2A124ED1007F61C9 /* MotorcycleState.swift */; };
+		7BC3C5BF2A124FA4007F61C9 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5BE2A124FA4007F61C9 /* Motorcycle.swift */; };
+		7BC3C5C12A125441007F61C9 /* MovingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5C02A125441007F61C9 /* MovingState.swift */; };
+		7BC3C5C32A125AE7007F61C9 /* StoppedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5C22A125AE7007F61C9 /* StoppedState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7BC3C5962A0B9696007F61C9 /* Adapter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adapter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC3C5992A0B9696007F61C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC3C59B2A0B9696007F61C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7BC3C59D2A0B9696007F61C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BC3C59D2A0B9696007F61C9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7BC3C5A02A0B9696007F61C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BC3C5A22A0B9696007F61C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC3C5A52A0B9696007F61C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +37,13 @@
 		7BC3C5AD2A0BAF2C007F61C9 /* Motorcycles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycles.swift; sourceTree = "<group>"; };
 		7BC3C5AF2A0BB058007F61C9 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		7BC3C5B12A0CFADD007F61C9 /* Adaptee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adaptee.swift; sourceTree = "<group>"; };
+		7BC3C5B52A12498C007F61C9 /* Race.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Race.storyboard; sourceTree = "<group>"; };
+		7BC3C5B72A1249AB007F61C9 /* RaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceViewController.swift; sourceTree = "<group>"; };
+		7BC3C5B92A124E90007F61C9 /* MotorcycleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcycleProtocol.swift; sourceTree = "<group>"; };
+		7BC3C5BB2A124ED1007F61C9 /* MotorcycleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcycleState.swift; sourceTree = "<group>"; };
+		7BC3C5BE2A124FA4007F61C9 /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
+		7BC3C5C02A125441007F61C9 /* MovingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingState.swift; sourceTree = "<group>"; };
+		7BC3C5C22A125AE7007F61C9 /* StoppedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoppedState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +78,47 @@
 			children = (
 				7BC3C5992A0B9696007F61C9 /* AppDelegate.swift */,
 				7BC3C59B2A0B9696007F61C9 /* SceneDelegate.swift */,
-				7BC3C5AD2A0BAF2C007F61C9 /* Motorcycles.swift */,
-				7BC3C5B12A0CFADD007F61C9 /* Adaptee.swift */,
-				7BC3C5AF2A0BB058007F61C9 /* Adapter.swift */,
-				7BC3C59D2A0B9696007F61C9 /* ViewController.swift */,
+				7BC3C5B32A1242B0007F61C9 /* Adapter */,
+				7BC3C5B42A1242E0007F61C9 /* State */,
+				7BC3C59D2A0B9696007F61C9 /* MainViewController.swift */,
+				7BC3C5B72A1249AB007F61C9 /* RaceViewController.swift */,
 				7BC3C59F2A0B9696007F61C9 /* Main.storyboard */,
+				7BC3C5B52A12498C007F61C9 /* Race.storyboard */,
 				7BC3C5A22A0B9696007F61C9 /* Assets.xcassets */,
 				7BC3C5A42A0B9696007F61C9 /* LaunchScreen.storyboard */,
 				7BC3C5A72A0B9696007F61C9 /* Info.plist */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		7BC3C5B32A1242B0007F61C9 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				7BC3C5AD2A0BAF2C007F61C9 /* Motorcycles.swift */,
+				7BC3C5B12A0CFADD007F61C9 /* Adaptee.swift */,
+				7BC3C5AF2A0BB058007F61C9 /* Adapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		7BC3C5B42A1242E0007F61C9 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				7BC3C5BD2A124F6D007F61C9 /* States */,
+				7BC3C5B92A124E90007F61C9 /* MotorcycleProtocol.swift */,
+				7BC3C5BE2A124FA4007F61C9 /* Motorcycle.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		7BC3C5BD2A124F6D007F61C9 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				7BC3C5BB2A124ED1007F61C9 /* MotorcycleState.swift */,
+				7BC3C5C02A125441007F61C9 /* MovingState.swift */,
+				7BC3C5C22A125AE7007F61C9 /* StoppedState.swift */,
+			);
+			path = States;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC3C5A62A0B9696007F61C9 /* LaunchScreen.storyboard in Resources */,
+				7BC3C5B62A12498C007F61C9 /* Race.storyboard in Resources */,
 				7BC3C5A32A0B9696007F61C9 /* Assets.xcassets in Resources */,
 				7BC3C5A12A0B9696007F61C9 /* Main.storyboard in Resources */,
 			);
@@ -147,9 +193,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC3C59E2A0B9696007F61C9 /* ViewController.swift in Sources */,
+				7BC3C59E2A0B9696007F61C9 /* MainViewController.swift in Sources */,
+				7BC3C5C32A125AE7007F61C9 /* StoppedState.swift in Sources */,
 				7BC3C59A2A0B9696007F61C9 /* AppDelegate.swift in Sources */,
+				7BC3C5BC2A124ED1007F61C9 /* MotorcycleState.swift in Sources */,
+				7BC3C5BA2A124E90007F61C9 /* MotorcycleProtocol.swift in Sources */,
+				7BC3C5BF2A124FA4007F61C9 /* Motorcycle.swift in Sources */,
+				7BC3C5B82A1249AB007F61C9 /* RaceViewController.swift in Sources */,
 				7BC3C5AE2A0BAF2C007F61C9 /* Motorcycles.swift in Sources */,
+				7BC3C5C12A125441007F61C9 /* MovingState.swift in Sources */,
 				7BC3C5B02A0BB058007F61C9 /* Adapter.swift in Sources */,
 				7BC3C5B22A0CFADD007F61C9 /* Adaptee.swift in Sources */,
 				7BC3C59C2A0B9696007F61C9 /* SceneDelegate.swift in Sources */,
