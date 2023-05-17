@@ -10,6 +10,8 @@ import UIKit
 class RaceViewController: UIViewController {
     
     @IBOutlet weak var speedIndicatorLabel: UILabel!
+    @IBOutlet weak var retryImageButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     
     let motorcycle = Motorcycle()
     
@@ -18,12 +20,17 @@ class RaceViewController: UIViewController {
         speedIndicatorLabel.text = motorcycle.brake()
     }
     
-    
     @IBAction func accelerate(_ sender: Any) {
         speedIndicatorLabel.text = motorcycle.accelerate()
     }
     
     @IBAction func brake(_ sender: Any) {
         speedIndicatorLabel.text = motorcycle.brake()
+    }
+    
+    @IBAction func retryImage(_ sender: Any) {
+        let url = URL(string: "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/21MY_Z900_BK4_STU.png")
+        imageView.downloadImage(at: url!)
+        retryImageButton.isHidden = true
     }
 }

@@ -23,6 +23,8 @@
 		7BC3C5BF2A124FA4007F61C9 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5BE2A124FA4007F61C9 /* Motorcycle.swift */; };
 		7BC3C5C12A125441007F61C9 /* MovingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5C02A125441007F61C9 /* MovingState.swift */; };
 		7BC3C5C32A125AE7007F61C9 /* StoppedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5C22A125AE7007F61C9 /* StoppedState.swift */; };
+		7BC3C5C82A14C8F1007F61C9 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5C72A14C8F1007F61C9 /* UIImageViewExtension.swift */; };
+		7BC3C5CA2A14C928007F61C9 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5C92A14C928007F61C9 /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		7BC3C5BE2A124FA4007F61C9 /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
 		7BC3C5C02A125441007F61C9 /* MovingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingState.swift; sourceTree = "<group>"; };
 		7BC3C5C22A125AE7007F61C9 /* StoppedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoppedState.swift; sourceTree = "<group>"; };
+		7BC3C5C72A14C8F1007F61C9 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		7BC3C5C92A14C928007F61C9 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				7BC3C59B2A0B9696007F61C9 /* SceneDelegate.swift */,
 				7BC3C5B32A1242B0007F61C9 /* Adapter */,
 				7BC3C5B42A1242E0007F61C9 /* State */,
+				7BC3C5C62A14C8C1007F61C9 /* Facade */,
 				7BC3C59D2A0B9696007F61C9 /* MainViewController.swift */,
 				7BC3C5B72A1249AB007F61C9 /* RaceViewController.swift */,
 				7BC3C59F2A0B9696007F61C9 /* Main.storyboard */,
@@ -119,6 +124,15 @@
 				7BC3C5C22A125AE7007F61C9 /* StoppedState.swift */,
 			);
 			path = States;
+			sourceTree = "<group>";
+		};
+		7BC3C5C62A14C8C1007F61C9 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				7BC3C5C72A14C8F1007F61C9 /* UIImageViewExtension.swift */,
+				7BC3C5C92A14C928007F61C9 /* ImageDownloader.swift */,
+			);
+			path = Facade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +209,7 @@
 			files = (
 				7BC3C59E2A0B9696007F61C9 /* MainViewController.swift in Sources */,
 				7BC3C5C32A125AE7007F61C9 /* StoppedState.swift in Sources */,
+				7BC3C5CA2A14C928007F61C9 /* ImageDownloader.swift in Sources */,
 				7BC3C59A2A0B9696007F61C9 /* AppDelegate.swift in Sources */,
 				7BC3C5BC2A124ED1007F61C9 /* MotorcycleState.swift in Sources */,
 				7BC3C5BA2A124E90007F61C9 /* MotorcycleProtocol.swift in Sources */,
@@ -204,6 +219,7 @@
 				7BC3C5C12A125441007F61C9 /* MovingState.swift in Sources */,
 				7BC3C5B02A0BB058007F61C9 /* Adapter.swift in Sources */,
 				7BC3C5B22A0CFADD007F61C9 /* Adaptee.swift in Sources */,
+				7BC3C5C82A14C8F1007F61C9 /* UIImageViewExtension.swift in Sources */,
 				7BC3C59C2A0B9696007F61C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
