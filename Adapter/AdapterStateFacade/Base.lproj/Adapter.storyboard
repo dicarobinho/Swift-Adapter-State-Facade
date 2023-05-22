@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Adapter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Adapter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AdapterViewController" customModule="Adapter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,17 +96,17 @@
                         <outlet property="nakedBikeLabel" destination="2fb-pe-rAX" id="Syf-88-mIt"/>
                         <outlet property="scooterLabel" destination="mEG-LQ-FXB" id="RxF-Fv-Gjl"/>
                         <outlet property="sportBikeLabel" destination="T7A-0A-IIO" id="tsg-np-Kzd"/>
-                        <segue destination="KqZ-Wo-Pp7" kind="show" identifier="GoToRace" id="zTp-37-dvb"/>
+                        <segue destination="KqZ-Wo-Pp7" kind="show" identifier="GoToStateFacade" id="zTp-37-dvb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="77" y="4"/>
         </scene>
-        <!--Race-->
+        <!--StateFacade-->
         <scene sceneID="I1A-s6-RzD">
             <objects>
-                <viewControllerPlaceholder storyboardName="Race" id="KqZ-Wo-Pp7" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="StateFacade" id="KqZ-Wo-Pp7" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lGK-pG-mLt"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fp-gL-Ms5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class AdapterViewController: UIViewController {
 
     @IBOutlet weak var sportBikeLabel: UILabel!
     @IBOutlet weak var nakedBikeLabel: UILabel!
@@ -28,14 +28,9 @@ class MainViewController: UIViewController {
         scooterLabel.text = "\(scooter.doRace())\n HP: \(scooter.HP)"
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        adaptButton.setTitle("Adapt scooter for race", for: .normal)
-    }
-    
     @IBAction func adaptScooterHP(_ sender: Any) {
         if readyToRace {
-            performSegue(withIdentifier: "GoToRace", sender: nil)
+            performSegue(withIdentifier: "GoToStateFacade", sender: nil)
         } else {
             let scooter = Scooter()
             scooterLabel.text = "\(ScooterAdapter(scooter).doRace())\n HP: \(scooter.HP)"
