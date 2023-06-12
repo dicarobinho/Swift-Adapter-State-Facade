@@ -21,4 +21,8 @@ class MenuViewController: UIViewController {
     @IBAction func goToObserver(_ sender: Any) {
         performSegue(withIdentifier: "GoToObserver", sender: nil)
     }
+    
+    @IBAction func goToBuilder(_ sender: Any) {
+        performSegue(withIdentifier: "GoToBuilder", sender: nil)
+    }
 }

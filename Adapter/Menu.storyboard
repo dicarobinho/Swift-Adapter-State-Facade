@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DLN-Ir-X24">
-                                <rect key="frame" x="102.33333333333333" y="399" width="188.33333333333337" height="123"/>
+                                <rect key="frame" x="102.33333333333333" y="377" width="188.33333333333337" height="167.33333333333337"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGU-J7-Buc">
                                         <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="34.333333333333336"/>
@@ -43,6 +43,14 @@
                                             <action selector="goToObserver:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DMX-Iq-XW2"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4Y-Vy-YNg" userLabel="Observer">
+                                        <rect key="frame" x="0.0" y="133" width="188.33333333333334" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Builder"/>
+                                        <connections>
+                                            <action selector="goToBuilder:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0NN-T8-at6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -58,6 +66,7 @@
                         <segue destination="tOH-gU-snI" kind="show" identifier="GoToAdapter" id="DHZ-8T-SLm"/>
                         <segue destination="x6D-3w-HHD" kind="show" identifier="GoToDecorator" id="oLe-wP-1CJ"/>
                         <segue destination="3tA-KZ-oDc" kind="show" identifier="GoToObserver" id="92D-ZL-gLL"/>
+                        <segue destination="ywj-LW-bN1" kind="show" identifier="GoToBuilder" id="CRR-kl-c6m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -84,6 +93,16 @@
             </objects>
             <point key="canvasLocation" x="1584" y="-2"/>
         </scene>
+        <!--Builder-->
+        <scene sceneID="v24-JL-6iR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Builder" id="ywj-LW-bN1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6g9-xs-4X5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdl-pQ-nEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1571" y="118"/>
+        </scene>
         <!--Observer-->
         <scene sceneID="AJa-hk-CAz">
             <objects>
@@ -92,7 +111,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHJ-5M-JX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="57"/>
+            <point key="canvasLocation" x="1580" y="63"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pKJ-VT-0ik">

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7191C82A372049008A930B /* BuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7191C72A372049008A930B /* BuilderViewController.swift */; };
+		7B7191CA2A37206F008A930B /* Builder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7191C92A37206F008A930B /* Builder.storyboard */; };
+		7B7191CC2A372077008A930B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7191CB2A372077008A930B /* Builder.swift */; };
+		7B7191CE2A3758E0008A930B /* FinishedMotorcycleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7191CD2A3758E0008A930B /* FinishedMotorcycleBuilder.swift */; };
+		7B7191D02A375905008A930B /* MotorcycleShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7191CF2A375905008A930B /* MotorcycleShop.swift */; };
 		7BC3C59A2A0B9696007F61C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5992A0B9696007F61C9 /* AppDelegate.swift */; };
 		7BC3C59C2A0B9696007F61C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C59B2A0B9696007F61C9 /* SceneDelegate.swift */; };
 		7BC3C59E2A0B9696007F61C9 /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C59D2A0B9696007F61C9 /* AdapterViewController.swift */; };
@@ -36,6 +41,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B7191C72A372049008A930B /* BuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderViewController.swift; sourceTree = "<group>"; };
+		7B7191C92A37206F008A930B /* Builder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Builder.storyboard; sourceTree = "<group>"; };
+		7B7191CB2A372077008A930B /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		7B7191CD2A3758E0008A930B /* FinishedMotorcycleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedMotorcycleBuilder.swift; sourceTree = "<group>"; };
+		7B7191CF2A375905008A930B /* MotorcycleShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcycleShop.swift; sourceTree = "<group>"; };
 		7BC3C5962A0B9696007F61C9 /* Adapter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adapter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC3C5992A0B9696007F61C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC3C59B2A0B9696007F61C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +87,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B7191C62A371F92008A930B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				7B7191C72A372049008A930B /* BuilderViewController.swift */,
+				7B7191C92A37206F008A930B /* Builder.storyboard */,
+				7B7191CB2A372077008A930B /* Builder.swift */,
+				7B7191CD2A3758E0008A930B /* FinishedMotorcycleBuilder.swift */,
+				7B7191CF2A375905008A930B /* MotorcycleShop.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		7BC3C58D2A0B9695007F61C9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +123,7 @@
 				7BC3C5CF2A1B6EB3007F61C9 /* AdapterStateFacade */,
 				7BC3C5D02A1B70B7007F61C9 /* Decorator */,
 				7BC3C5D72A1F85A2007F61C9 /* Observer */,
+				7B7191C62A371F92008A930B /* Builder */,
 				7BC3C5CB2A1B6CD2007F61C9 /* Menu.storyboard */,
 				7BC3C5CD2A1B6CE1007F61C9 /* MenuViewController.swift */,
 				7BC3C5A22A0B9696007F61C9 /* Assets.xcassets */,
@@ -241,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7191CA2A37206F008A930B /* Builder.storyboard in Resources */,
 				7BC3C5D42A1B70CF007F61C9 /* Decorator.storyboard in Resources */,
 				7BC3C5CC2A1B6CD2007F61C9 /* Menu.storyboard in Resources */,
 				7BC3C5A62A0B9696007F61C9 /* LaunchScreen.storyboard in Resources */,
@@ -258,9 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7191C82A372049008A930B /* BuilderViewController.swift in Sources */,
 				7BC3C59E2A0B9696007F61C9 /* AdapterViewController.swift in Sources */,
+				7B7191CC2A372077008A930B /* Builder.swift in Sources */,
 				7BC3C5CE2A1B6CE1007F61C9 /* MenuViewController.swift in Sources */,
 				7BC3C5D62A1B8C1D007F61C9 /* Decorator.swift in Sources */,
+				7B7191D02A375905008A930B /* MotorcycleShop.swift in Sources */,
 				7BC3C5C32A125AE7007F61C9 /* StoppedState.swift in Sources */,
 				7BC3C5CA2A14C928007F61C9 /* ImageDownloader.swift in Sources */,
 				7BC3C59A2A0B9696007F61C9 /* AppDelegate.swift in Sources */,
@@ -272,6 +299,7 @@
 				7BC3C5AE2A0BAF2C007F61C9 /* Motorcycles.swift in Sources */,
 				7BC3C5D22A1B70C7007F61C9 /* DecoratorViewController.swift in Sources */,
 				7BC3C5C12A125441007F61C9 /* MovingState.swift in Sources */,
+				7B7191CE2A3758E0008A930B /* FinishedMotorcycleBuilder.swift in Sources */,
 				7BC3C5B02A0BB058007F61C9 /* Adapter.swift in Sources */,
 				7BC3C5D92A1F865A007F61C9 /* ObserverViewController.swift in Sources */,
 				7BC3C5B22A0CFADD007F61C9 /* Adaptee.swift in Sources */,
