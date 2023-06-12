@@ -17,4 +17,8 @@ class MenuViewController: UIViewController {
     @IBAction func goToDecorator(_ sender: Any) {
         performSegue(withIdentifier: "GoToDecorator", sender: nil)
     }
+    
+    @IBAction func goToObserver(_ sender: Any) {
+        performSegue(withIdentifier: "GoToObserver", sender: nil)
+    }
 }

@@ -22,9 +22,23 @@ class SportBike: Race {
 
 class NakedBike: Race {
     
+    var numberOfBikes: Observable<Int>
+    
     let HP = 100
+    
+    init(numberOfBikes: Int = 0) {
+        self.numberOfBikes = Observable(value: numberOfBikes)
+    }
     
     func doRace() -> String {
         return "I am a Naked Bike and I can race"
+    }
+    
+    func addBikeToCart() {
+        numberOfBikes.value = numberOfBikes.value + 1
+    }
+    
+    func removeBikeFromCart() {
+        numberOfBikes.value = numberOfBikes.value - 1
     }
 }

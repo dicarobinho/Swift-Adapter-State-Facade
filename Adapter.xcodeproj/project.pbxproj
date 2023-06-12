@@ -30,6 +30,9 @@
 		7BC3C5D22A1B70C7007F61C9 /* DecoratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5D12A1B70C7007F61C9 /* DecoratorViewController.swift */; };
 		7BC3C5D42A1B70CF007F61C9 /* Decorator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC3C5D32A1B70CF007F61C9 /* Decorator.storyboard */; };
 		7BC3C5D62A1B8C1D007F61C9 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5D52A1B8C1D007F61C9 /* Decorator.swift */; };
+		7BC3C5D92A1F865A007F61C9 /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5D82A1F865A007F61C9 /* ObserverViewController.swift */; };
+		7BC3C5DB2A1F8662007F61C9 /* Observer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC3C5DA2A1F8662007F61C9 /* Observer.storyboard */; };
+		7BC3C5DD2A1F87F8007F61C9 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3C5DC2A1F87F8007F61C9 /* Observer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		7BC3C5D12A1B70C7007F61C9 /* DecoratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorViewController.swift; sourceTree = "<group>"; };
 		7BC3C5D32A1B70CF007F61C9 /* Decorator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Decorator.storyboard; sourceTree = "<group>"; };
 		7BC3C5D52A1B8C1D007F61C9 /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		7BC3C5D82A1F865A007F61C9 /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
+		7BC3C5DA2A1F8662007F61C9 /* Observer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Observer.storyboard; sourceTree = "<group>"; };
+		7BC3C5DC2A1F87F8007F61C9 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 				7BC3C59B2A0B9696007F61C9 /* SceneDelegate.swift */,
 				7BC3C5CF2A1B6EB3007F61C9 /* AdapterStateFacade */,
 				7BC3C5D02A1B70B7007F61C9 /* Decorator */,
+				7BC3C5D72A1F85A2007F61C9 /* Observer */,
 				7BC3C5CB2A1B6CD2007F61C9 /* Menu.storyboard */,
 				7BC3C5CD2A1B6CE1007F61C9 /* MenuViewController.swift */,
 				7BC3C5A22A0B9696007F61C9 /* Assets.xcassets */,
@@ -166,6 +173,16 @@
 			path = Decorator;
 			sourceTree = "<group>";
 		};
+		7BC3C5D72A1F85A2007F61C9 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				7BC3C5D82A1F865A007F61C9 /* ObserverViewController.swift */,
+				7BC3C5DA2A1F8662007F61C9 /* Observer.storyboard */,
+				7BC3C5DC2A1F87F8007F61C9 /* Observer.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +244,7 @@
 				7BC3C5D42A1B70CF007F61C9 /* Decorator.storyboard in Resources */,
 				7BC3C5CC2A1B6CD2007F61C9 /* Menu.storyboard in Resources */,
 				7BC3C5A62A0B9696007F61C9 /* LaunchScreen.storyboard in Resources */,
+				7BC3C5DB2A1F8662007F61C9 /* Observer.storyboard in Resources */,
 				7BC3C5B62A12498C007F61C9 /* StateFacade.storyboard in Resources */,
 				7BC3C5A32A0B9696007F61C9 /* Assets.xcassets in Resources */,
 				7BC3C5A12A0B9696007F61C9 /* Adapter.storyboard in Resources */,
@@ -249,11 +267,13 @@
 				7BC3C5BC2A124ED1007F61C9 /* MotorcycleState.swift in Sources */,
 				7BC3C5BA2A124E90007F61C9 /* MotorcycleProtocol.swift in Sources */,
 				7BC3C5BF2A124FA4007F61C9 /* Motorcycle.swift in Sources */,
+				7BC3C5DD2A1F87F8007F61C9 /* Observer.swift in Sources */,
 				7BC3C5B82A1249AB007F61C9 /* StateFacadeViewController.swift in Sources */,
 				7BC3C5AE2A0BAF2C007F61C9 /* Motorcycles.swift in Sources */,
 				7BC3C5D22A1B70C7007F61C9 /* DecoratorViewController.swift in Sources */,
 				7BC3C5C12A125441007F61C9 /* MovingState.swift in Sources */,
 				7BC3C5B02A0BB058007F61C9 /* Adapter.swift in Sources */,
+				7BC3C5D92A1F865A007F61C9 /* ObserverViewController.swift in Sources */,
 				7BC3C5B22A0CFADD007F61C9 /* Adaptee.swift in Sources */,
 				7BC3C5C82A14C8F1007F61C9 /* UIImageViewExtension.swift in Sources */,
 				7BC3C59C2A0B9696007F61C9 /* SceneDelegate.swift in Sources */,
