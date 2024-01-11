@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chain Of Responsibility View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ChainOfResponsibilityViewController" customModule="Adapter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UA2-pX-bmy">
+                                <rect key="frame" x="46.666666666666657" y="329" width="300" height="219"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Brand" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SQV-ZZ-bWc">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="26.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s1T-Hg-wda">
+                                        <rect key="frame" x="0.0" y="46.666666666666686" width="300" height="26.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mID-f5-tuj">
+                                        <rect key="frame" x="80.999999999999986" y="93.333333333333314" width="137.66666666666663" height="31"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rgq-PJ-XaQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchSportBike:" destination="Y6W-OH-hqX" eventType="valueChanged" id="xfH-K7-nh6"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sport Bike" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04P-6L-eaW">
+                                                <rect key="frame" x="58.999999999999979" y="0.0" width="78.666666666666686" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Sport Exhaust Brand" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lC4-PL-0UI">
+                                        <rect key="frame" x="0.0" y="134.33333333333331" width="300" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No bike loaded!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9V-sq-vgw">
+                                        <rect key="frame" x="90.666666666666686" y="144.33333333333331" width="118.66666666666669" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DiW-f3-fnh">
+                                        <rect key="frame" x="95.333333333333343" y="184.66666666666663" width="109.33333333333334" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIB-M2-Aky">
+                                                <rect key="frame" x="0.0" y="0.0" width="109.33333333333333" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Naked Bike"/>
+                                                <connections>
+                                                    <action selector="loadNakedBike:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ccd-Xz-UKg"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiN-bF-PhH">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Sport Bike"/>
+                                                <connections>
+                                                    <action selector="loadSportBike:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tA1-uq-uiB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8s3-OM-xiK"/>
+                                    <constraint firstAttribute="trailing" secondItem="s1T-Hg-wda" secondAttribute="trailing" id="dFg-lo-prv"/>
+                                    <constraint firstItem="SQV-ZZ-bWc" firstAttribute="leading" secondItem="UA2-pX-bmy" secondAttribute="leading" id="go0-cB-0du"/>
+                                    <constraint firstAttribute="trailing" secondItem="SQV-ZZ-bWc" secondAttribute="trailing" id="qe7-ZO-jmY"/>
+                                    <constraint firstItem="s1T-Hg-wda" firstAttribute="leading" secondItem="UA2-pX-bmy" secondAttribute="leading" id="sjY-Kh-Vb0"/>
+                                    <constraint firstAttribute="trailing" secondItem="lC4-PL-0UI" secondAttribute="trailing" id="tFx-Li-Cc6"/>
+                                    <constraint firstItem="lC4-PL-0UI" firstAttribute="leading" secondItem="UA2-pX-bmy" secondAttribute="leading" id="ty5-0t-SB0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UA2-pX-bmy" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="XEF-TT-nmC"/>
+                            <constraint firstItem="UA2-pX-bmy" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="pbx-Vj-7cV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brandTextField" destination="SQV-ZZ-bWc" id="oGx-CS-iBz"/>
+                        <outlet property="messageLabel" destination="a9V-sq-vgw" id="vCs-6h-gZb"/>
+                        <outlet property="nakedBikeButton" destination="lIB-M2-Aky" id="eHd-pg-aG5"/>
+                        <outlet property="sportBikeButton" destination="uiN-bF-PhH" id="llP-nb-1dR"/>
+                        <outlet property="sportExhaustTextField" destination="lC4-PL-0UI" id="w05-YC-co8"/>
+                        <outlet property="switchForSportBike" destination="rgq-PJ-XaQ" id="dyj-jF-VWs"/>
+                        <outlet property="yearTextField" destination="s1T-Hg-wda" id="S8C-W4-8Nr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

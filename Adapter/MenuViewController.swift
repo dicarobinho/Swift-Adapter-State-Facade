@@ -25,4 +25,12 @@ class MenuViewController: UIViewController {
     @IBAction func goToBuilder(_ sender: Any) {
         performSegue(withIdentifier: "GoToBuilder", sender: nil)
     }
+    
+    @IBAction func goToComposite(_ sender: Any) {
+        performSegue(withIdentifier: "GoToComposite", sender: nil)
+    }
+    
+    @IBAction func goToChainOfResponsibility(_ sender: Any) {
+        performSegue(withIdentifier: "GoToChainOfResponsibility", sender: nil)
+    }
 }

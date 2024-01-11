@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B2D1F572A4C706300FDB1CB /* Composite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D1F562A4C706300FDB1CB /* Composite.storyboard */; };
+		7B2D1F592A4C707100FDB1CB /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D1F582A4C707100FDB1CB /* CompositeViewController.swift */; };
+		7B2D1F5B2A4C70D500FDB1CB /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D1F5A2A4C70D500FDB1CB /* Composite.swift */; };
+		7B5A83952B4FE41D00459125 /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A83942B4FE41D00459125 /* Handlers.swift */; };
+		7B5A83992B4FE7A400459125 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A83982B4FE7A400459125 /* Extensions.swift */; };
+		7B5A839B2B4FEC3D00459125 /* ChainOfResponsibility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5A839A2B4FEC3D00459125 /* ChainOfResponsibility.storyboard */; };
+		7B5A839D2B4FECAC00459125 /* ChainOfResposibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A839C2B4FECAC00459125 /* ChainOfResposibilityViewController.swift */; };
+		7B5A839F2B5034FA00459125 /* RequestErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A839E2B5034FA00459125 /* RequestErrors.swift */; };
+		7B5A83A12B50351E00459125 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A83A02B50351E00459125 /* Requests.swift */; };
 		7B7191C82A372049008A930B /* BuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7191C72A372049008A930B /* BuilderViewController.swift */; };
 		7B7191CA2A37206F008A930B /* Builder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7191C92A37206F008A930B /* Builder.storyboard */; };
 		7B7191CC2A372077008A930B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7191CB2A372077008A930B /* Builder.swift */; };
@@ -41,6 +50,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B2D1F562A4C706300FDB1CB /* Composite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Composite.storyboard; sourceTree = "<group>"; };
+		7B2D1F582A4C707100FDB1CB /* CompositeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
+		7B2D1F5A2A4C70D500FDB1CB /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
+		7B5A83942B4FE41D00459125 /* Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handlers.swift; sourceTree = "<group>"; };
+		7B5A83982B4FE7A400459125 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B5A839A2B4FEC3D00459125 /* ChainOfResponsibility.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChainOfResponsibility.storyboard; sourceTree = "<group>"; };
+		7B5A839C2B4FECAC00459125 /* ChainOfResposibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResposibilityViewController.swift; sourceTree = "<group>"; };
+		7B5A839E2B5034FA00459125 /* RequestErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestErrors.swift; sourceTree = "<group>"; };
+		7B5A83A02B50351E00459125 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		7B7191C72A372049008A930B /* BuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderViewController.swift; sourceTree = "<group>"; };
 		7B7191C92A37206F008A930B /* Builder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Builder.storyboard; sourceTree = "<group>"; };
 		7B7191CB2A372077008A930B /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
@@ -87,6 +105,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B2D1F552A4C700D00FDB1CB /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				7B2D1F562A4C706300FDB1CB /* Composite.storyboard */,
+				7B2D1F5A2A4C70D500FDB1CB /* Composite.swift */,
+				7B2D1F582A4C707100FDB1CB /* CompositeViewController.swift */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
+		7B5A838F2B4FDE5500459125 /* ChainOfResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+				7B5A83A02B50351E00459125 /* Requests.swift */,
+				7B5A83942B4FE41D00459125 /* Handlers.swift */,
+				7B5A839E2B5034FA00459125 /* RequestErrors.swift */,
+				7B5A839A2B4FEC3D00459125 /* ChainOfResponsibility.storyboard */,
+				7B5A839C2B4FECAC00459125 /* ChainOfResposibilityViewController.swift */,
+			);
+			path = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
 		7B7191C62A371F92008A930B /* Builder */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,10 +160,13 @@
 			children = (
 				7BC3C5992A0B9696007F61C9 /* AppDelegate.swift */,
 				7BC3C59B2A0B9696007F61C9 /* SceneDelegate.swift */,
+				7B5A83982B4FE7A400459125 /* Extensions.swift */,
 				7BC3C5CF2A1B6EB3007F61C9 /* AdapterStateFacade */,
 				7BC3C5D02A1B70B7007F61C9 /* Decorator */,
 				7BC3C5D72A1F85A2007F61C9 /* Observer */,
 				7B7191C62A371F92008A930B /* Builder */,
+				7B2D1F552A4C700D00FDB1CB /* Composite */,
+				7B5A838F2B4FDE5500459125 /* ChainOfResponsibility */,
 				7BC3C5CB2A1B6CD2007F61C9 /* Menu.storyboard */,
 				7BC3C5CD2A1B6CE1007F61C9 /* MenuViewController.swift */,
 				7BC3C5A22A0B9696007F61C9 /* Assets.xcassets */,
@@ -264,12 +307,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5A839B2B4FEC3D00459125 /* ChainOfResponsibility.storyboard in Resources */,
 				7B7191CA2A37206F008A930B /* Builder.storyboard in Resources */,
 				7BC3C5D42A1B70CF007F61C9 /* Decorator.storyboard in Resources */,
 				7BC3C5CC2A1B6CD2007F61C9 /* Menu.storyboard in Resources */,
 				7BC3C5A62A0B9696007F61C9 /* LaunchScreen.storyboard in Resources */,
 				7BC3C5DB2A1F8662007F61C9 /* Observer.storyboard in Resources */,
 				7BC3C5B62A12498C007F61C9 /* StateFacade.storyboard in Resources */,
+				7B2D1F572A4C706300FDB1CB /* Composite.storyboard in Resources */,
 				7BC3C5A32A0B9696007F61C9 /* Assets.xcassets in Resources */,
 				7BC3C5A12A0B9696007F61C9 /* Adapter.storyboard in Resources */,
 			);
@@ -283,10 +328,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B7191C82A372049008A930B /* BuilderViewController.swift in Sources */,
+				7B5A83A12B50351E00459125 /* Requests.swift in Sources */,
 				7BC3C59E2A0B9696007F61C9 /* AdapterViewController.swift in Sources */,
+				7B5A839F2B5034FA00459125 /* RequestErrors.swift in Sources */,
+				7B2D1F592A4C707100FDB1CB /* CompositeViewController.swift in Sources */,
 				7B7191CC2A372077008A930B /* Builder.swift in Sources */,
 				7BC3C5CE2A1B6CE1007F61C9 /* MenuViewController.swift in Sources */,
 				7BC3C5D62A1B8C1D007F61C9 /* Decorator.swift in Sources */,
+				7B5A83952B4FE41D00459125 /* Handlers.swift in Sources */,
+				7B5A83992B4FE7A400459125 /* Extensions.swift in Sources */,
 				7B7191D02A375905008A930B /* MotorcycleShop.swift in Sources */,
 				7BC3C5C32A125AE7007F61C9 /* StoppedState.swift in Sources */,
 				7BC3C5CA2A14C928007F61C9 /* ImageDownloader.swift in Sources */,
@@ -301,7 +351,9 @@
 				7BC3C5C12A125441007F61C9 /* MovingState.swift in Sources */,
 				7B7191CE2A3758E0008A930B /* FinishedMotorcycleBuilder.swift in Sources */,
 				7BC3C5B02A0BB058007F61C9 /* Adapter.swift in Sources */,
+				7B2D1F5B2A4C70D500FDB1CB /* Composite.swift in Sources */,
 				7BC3C5D92A1F865A007F61C9 /* ObserverViewController.swift in Sources */,
+				7B5A839D2B4FECAC00459125 /* ChainOfResposibilityViewController.swift in Sources */,
 				7BC3C5B22A0CFADD007F61C9 /* Adaptee.swift in Sources */,
 				7BC3C5C82A14C8F1007F61C9 /* UIImageViewExtension.swift in Sources */,
 				7BC3C59C2A0B9696007F61C9 /* SceneDelegate.swift in Sources */,

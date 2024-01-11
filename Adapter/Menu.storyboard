@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9MJ-hT-UCP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9MJ-hT-UCP">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DLN-Ir-X24">
-                                <rect key="frame" x="102.33333333333333" y="377" width="188.33333333333337" height="167.33333333333337"/>
+                                <rect key="frame" x="101.33333333333333" y="332.66666666666669" width="190.66666666666669" height="256.00000000000006"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGU-J7-Buc">
-                                        <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="190.66666666666666" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Adapter State Facade"/>
                                         <connections>
@@ -28,7 +29,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-dC-WAM">
-                                        <rect key="frame" x="0.0" y="44.333333333333314" width="188.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="44.333333333333314" width="190.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Decorator"/>
                                         <connections>
@@ -36,7 +37,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmC-Fp-QiZ" userLabel="Observer">
-                                        <rect key="frame" x="0.0" y="88.666666666666686" width="188.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="88.666666666666629" width="190.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Observer"/>
                                         <connections>
@@ -44,11 +45,27 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4Y-Vy-YNg" userLabel="Observer">
-                                        <rect key="frame" x="0.0" y="133" width="188.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="133" width="190.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Builder"/>
                                         <connections>
                                             <action selector="goToBuilder:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0NN-T8-at6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xan-Dp-0je" userLabel="Observer">
+                                        <rect key="frame" x="0.0" y="177.33333333333331" width="190.66666666666666" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Composite"/>
+                                        <connections>
+                                            <action selector="goToComposite:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BcL-yX-Ohh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqC-Hf-FMg" userLabel="Observer">
+                                        <rect key="frame" x="0.0" y="221.66666666666669" width="190.66666666666666" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Chain Of Resposibility"/>
+                                        <connections>
+                                            <action selector="goToChainOfResponsibility:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fqR-xB-1xm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -67,11 +84,13 @@
                         <segue destination="x6D-3w-HHD" kind="show" identifier="GoToDecorator" id="oLe-wP-1CJ"/>
                         <segue destination="3tA-KZ-oDc" kind="show" identifier="GoToObserver" id="92D-ZL-gLL"/>
                         <segue destination="ywj-LW-bN1" kind="show" identifier="GoToBuilder" id="CRR-kl-c6m"/>
+                        <segue destination="Gg7-hd-Nr5" kind="show" identifier="GoToComposite" id="Dv2-ng-gQd"/>
+                        <segue destination="LFe-qW-5IO" kind="show" identifier="GoToChainOfResponsibility" id="So7-Yk-b5j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031.2977099236641" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="999" y="-2"/>
         </scene>
         <!--Adapter-->
         <scene sceneID="59U-mA-1kI">
@@ -102,6 +121,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdl-pQ-nEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1571" y="118"/>
+        </scene>
+        <!--Composite-->
+        <scene sceneID="Hwz-DJ-vrC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Composite" id="Gg7-hd-Nr5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LME-gm-Hq4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dv5-h2-U26" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="180"/>
+        </scene>
+        <!--ChainOfResponsibility-->
+        <scene sceneID="bu5-Qq-8kn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChainOfResponsibility" id="LFe-qW-5IO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aW2-VW-ZmL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQW-BA-M6o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="234"/>
         </scene>
         <!--Observer-->
         <scene sceneID="AJa-hk-CAz">
