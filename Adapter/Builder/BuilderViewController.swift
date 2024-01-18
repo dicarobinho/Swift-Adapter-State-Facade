@@ -25,4 +25,10 @@ class BuilderViewController: UIViewController {
         motorcycleImage.isHidden = false
         motorcycleImage.image = UIImage(named: image)
     }
+    
+    @IBAction func openInfo(_ sender: Any) {
+        if let url = URL(string: "https://refactoring.guru/design-patterns/builder/swift/example") {
+            UIApplication.shared.open(url)
+        }
+    }
 }

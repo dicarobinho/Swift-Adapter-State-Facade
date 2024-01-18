@@ -54,5 +54,8 @@ class DecatExhaustDecorator: Racing {
     func getHP() -> Double {
         return racing.getHP() + 15.0
     }
+    
+    @IBAction func openInfo(_ sender: Any) {
+    }
 }
 

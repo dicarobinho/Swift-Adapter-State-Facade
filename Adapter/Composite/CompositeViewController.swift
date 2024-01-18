@@ -30,4 +30,10 @@ class CompositeViewController: UIViewController {
     private func setMessage(circuit: Circuit) {
         messageLabel.text = "\(messageLabel.text ?? "") \(circuit.addMoto())"
     }
+    
+    @IBAction func openInfo(_ sender: Any) {
+        if let url = URL(string: "https://refactoring.guru/design-patterns/composite/swift/example") {
+            UIApplication.shared.open(url)
+        }
+    }
 }

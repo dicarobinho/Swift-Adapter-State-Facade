@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UA2-pX-bmy">
-                                <rect key="frame" x="46.666666666666657" y="329" width="300" height="219"/>
+                                <rect key="frame" x="46.666666666666657" y="351" width="300" height="219"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Brand" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SQV-ZZ-bWc">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="26.666666666666668"/>
@@ -98,6 +98,20 @@
                             <constraint firstItem="UA2-pX-bmy" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="pbx-Vj-7cV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="g08-uQ-7mR">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="wGa-sR-cad">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="mTQ-Pa-h23">
+                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Chain of Responsibility"/>
+                                <connections>
+                                    <action selector="openInfo:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zno-an-n9B"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="brandTextField" destination="SQV-ZZ-bWc" id="oGx-CS-iBz"/>
                         <outlet property="messageLabel" destination="a9V-sq-vgw" id="vCs-6h-gZb"/>
@@ -110,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8" y="-27"/>
+            <point key="canvasLocation" x="918.32061068702285" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>

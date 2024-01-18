@@ -16,6 +16,15 @@
 		7B5A839D2B4FECAC00459125 /* ChainOfResposibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A839C2B4FECAC00459125 /* ChainOfResposibilityViewController.swift */; };
 		7B5A839F2B5034FA00459125 /* RequestErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A839E2B5034FA00459125 /* RequestErrors.swift */; };
 		7B5A83A12B50351E00459125 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A83A02B50351E00459125 /* Requests.swift */; };
+		7B5A83A42B55392000459125 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A83A32B55392000459125 /* Factory.swift */; };
+		7B5A83A62B55437E00459125 /* Factory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5A83A52B55437E00459125 /* Factory.storyboard */; };
+		7B5A83A82B55438800459125 /* FactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A83A72B55438800459125 /* FactoryViewController.swift */; };
+		7B5A83AB2B56A3ED00459125 /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A83AA2B56A3ED00459125 /* Proxy.swift */; };
+		7B5A83AD2B56AF3000459125 /* Proxy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5A83AC2B56AF3000459125 /* Proxy.storyboard */; };
+		7B5A83AF2B56AF4000459125 /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A83AE2B56AF4000459125 /* ProxyViewController.swift */; };
+		7B5A83B22B5935F000459125 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A83B12B5935F000459125 /* Bridge.swift */; };
+		7B5A83B42B59514200459125 /* Bridge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5A83B32B59514200459125 /* Bridge.storyboard */; };
+		7B5A83B62B59517F00459125 /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5A83B52B59517F00459125 /* BridgeViewController.swift */; };
 		7B7191C82A372049008A930B /* BuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7191C72A372049008A930B /* BuilderViewController.swift */; };
 		7B7191CA2A37206F008A930B /* Builder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7191C92A37206F008A930B /* Builder.storyboard */; };
 		7B7191CC2A372077008A930B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7191CB2A372077008A930B /* Builder.swift */; };
@@ -59,6 +68,15 @@
 		7B5A839C2B4FECAC00459125 /* ChainOfResposibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResposibilityViewController.swift; sourceTree = "<group>"; };
 		7B5A839E2B5034FA00459125 /* RequestErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestErrors.swift; sourceTree = "<group>"; };
 		7B5A83A02B50351E00459125 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		7B5A83A32B55392000459125 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		7B5A83A52B55437E00459125 /* Factory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Factory.storyboard; sourceTree = "<group>"; };
+		7B5A83A72B55438800459125 /* FactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryViewController.swift; sourceTree = "<group>"; };
+		7B5A83AA2B56A3ED00459125 /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		7B5A83AC2B56AF3000459125 /* Proxy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Proxy.storyboard; sourceTree = "<group>"; };
+		7B5A83AE2B56AF4000459125 /* ProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
+		7B5A83B12B5935F000459125 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		7B5A83B32B59514200459125 /* Bridge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bridge.storyboard; sourceTree = "<group>"; };
+		7B5A83B52B59517F00459125 /* BridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
 		7B7191C72A372049008A930B /* BuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderViewController.swift; sourceTree = "<group>"; };
 		7B7191C92A37206F008A930B /* Builder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Builder.storyboard; sourceTree = "<group>"; };
 		7B7191CB2A372077008A930B /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
@@ -127,6 +145,36 @@
 			path = ChainOfResponsibility;
 			sourceTree = "<group>";
 		};
+		7B5A83A22B55348D00459125 /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				7B5A83A32B55392000459125 /* Factory.swift */,
+				7B5A83A52B55437E00459125 /* Factory.storyboard */,
+				7B5A83A72B55438800459125 /* FactoryViewController.swift */,
+			);
+			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		7B5A83A92B56A01B00459125 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				7B5A83AA2B56A3ED00459125 /* Proxy.swift */,
+				7B5A83AC2B56AF3000459125 /* Proxy.storyboard */,
+				7B5A83AE2B56AF4000459125 /* ProxyViewController.swift */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		7B5A83B02B5935E500459125 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				7B5A83B12B5935F000459125 /* Bridge.swift */,
+				7B5A83B32B59514200459125 /* Bridge.storyboard */,
+				7B5A83B52B59517F00459125 /* BridgeViewController.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
 		7B7191C62A371F92008A930B /* Builder */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +215,9 @@
 				7B7191C62A371F92008A930B /* Builder */,
 				7B2D1F552A4C700D00FDB1CB /* Composite */,
 				7B5A838F2B4FDE5500459125 /* ChainOfResponsibility */,
+				7B5A83A22B55348D00459125 /* FactoryMethod */,
+				7B5A83A92B56A01B00459125 /* Proxy */,
+				7B5A83B02B5935E500459125 /* Bridge */,
 				7BC3C5CB2A1B6CD2007F61C9 /* Menu.storyboard */,
 				7BC3C5CD2A1B6CE1007F61C9 /* MenuViewController.swift */,
 				7BC3C5A22A0B9696007F61C9 /* Assets.xcassets */,
@@ -308,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5A839B2B4FEC3D00459125 /* ChainOfResponsibility.storyboard in Resources */,
+				7B5A83AD2B56AF3000459125 /* Proxy.storyboard in Resources */,
 				7B7191CA2A37206F008A930B /* Builder.storyboard in Resources */,
 				7BC3C5D42A1B70CF007F61C9 /* Decorator.storyboard in Resources */,
 				7BC3C5CC2A1B6CD2007F61C9 /* Menu.storyboard in Resources */,
@@ -315,6 +367,8 @@
 				7BC3C5DB2A1F8662007F61C9 /* Observer.storyboard in Resources */,
 				7BC3C5B62A12498C007F61C9 /* StateFacade.storyboard in Resources */,
 				7B2D1F572A4C706300FDB1CB /* Composite.storyboard in Resources */,
+				7B5A83B42B59514200459125 /* Bridge.storyboard in Resources */,
+				7B5A83A62B55437E00459125 /* Factory.storyboard in Resources */,
 				7BC3C5A32A0B9696007F61C9 /* Assets.xcassets in Resources */,
 				7BC3C5A12A0B9696007F61C9 /* Adapter.storyboard in Resources */,
 			);
@@ -331,14 +385,17 @@
 				7B5A83A12B50351E00459125 /* Requests.swift in Sources */,
 				7BC3C59E2A0B9696007F61C9 /* AdapterViewController.swift in Sources */,
 				7B5A839F2B5034FA00459125 /* RequestErrors.swift in Sources */,
+				7B5A83A42B55392000459125 /* Factory.swift in Sources */,
 				7B2D1F592A4C707100FDB1CB /* CompositeViewController.swift in Sources */,
 				7B7191CC2A372077008A930B /* Builder.swift in Sources */,
+				7B5A83AB2B56A3ED00459125 /* Proxy.swift in Sources */,
 				7BC3C5CE2A1B6CE1007F61C9 /* MenuViewController.swift in Sources */,
 				7BC3C5D62A1B8C1D007F61C9 /* Decorator.swift in Sources */,
 				7B5A83952B4FE41D00459125 /* Handlers.swift in Sources */,
 				7B5A83992B4FE7A400459125 /* Extensions.swift in Sources */,
 				7B7191D02A375905008A930B /* MotorcycleShop.swift in Sources */,
 				7BC3C5C32A125AE7007F61C9 /* StoppedState.swift in Sources */,
+				7B5A83A82B55438800459125 /* FactoryViewController.swift in Sources */,
 				7BC3C5CA2A14C928007F61C9 /* ImageDownloader.swift in Sources */,
 				7BC3C59A2A0B9696007F61C9 /* AppDelegate.swift in Sources */,
 				7BC3C5BC2A124ED1007F61C9 /* MotorcycleState.swift in Sources */,
@@ -349,10 +406,13 @@
 				7BC3C5AE2A0BAF2C007F61C9 /* Motorcycles.swift in Sources */,
 				7BC3C5D22A1B70C7007F61C9 /* DecoratorViewController.swift in Sources */,
 				7BC3C5C12A125441007F61C9 /* MovingState.swift in Sources */,
+				7B5A83B62B59517F00459125 /* BridgeViewController.swift in Sources */,
+				7B5A83AF2B56AF4000459125 /* ProxyViewController.swift in Sources */,
 				7B7191CE2A3758E0008A930B /* FinishedMotorcycleBuilder.swift in Sources */,
 				7BC3C5B02A0BB058007F61C9 /* Adapter.swift in Sources */,
 				7B2D1F5B2A4C70D500FDB1CB /* Composite.swift in Sources */,
 				7BC3C5D92A1F865A007F61C9 /* ObserverViewController.swift in Sources */,
+				7B5A83B22B5935F000459125 /* Bridge.swift in Sources */,
 				7B5A839D2B4FECAC00459125 /* ChainOfResposibilityViewController.swift in Sources */,
 				7BC3C5B22A0CFADD007F61C9 /* Adaptee.swift in Sources */,
 				7BC3C5C82A14C8F1007F61C9 /* UIImageViewExtension.swift in Sources */,

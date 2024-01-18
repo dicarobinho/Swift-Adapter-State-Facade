@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DLN-Ir-X24">
-                                <rect key="frame" x="101.33333333333333" y="332.66666666666669" width="190.66666666666669" height="256.00000000000006"/>
+                                <rect key="frame" x="96.333333333333329" y="266" width="200.33333333333337" height="389"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGU-J7-Buc">
-                                        <rect key="frame" x="0.0" y="0.0" width="190.66666666666666" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200.33333333333334" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Adapter State Facade"/>
                                         <connections>
@@ -29,7 +29,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-dC-WAM">
-                                        <rect key="frame" x="0.0" y="44.333333333333314" width="190.66666666666666" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="44.333333333333314" width="200.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Decorator"/>
                                         <connections>
@@ -37,45 +37,77 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmC-Fp-QiZ" userLabel="Observer">
-                                        <rect key="frame" x="0.0" y="88.666666666666629" width="190.66666666666666" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="88.666666666666686" width="200.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Observer"/>
                                         <connections>
                                             <action selector="goToObserver:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DMX-Iq-XW2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4Y-Vy-YNg" userLabel="Observer">
-                                        <rect key="frame" x="0.0" y="133" width="190.66666666666666" height="34.333333333333343"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4Y-Vy-YNg">
+                                        <rect key="frame" x="0.0" y="133" width="200.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Builder"/>
                                         <connections>
                                             <action selector="goToBuilder:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0NN-T8-at6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xan-Dp-0je" userLabel="Observer">
-                                        <rect key="frame" x="0.0" y="177.33333333333331" width="190.66666666666666" height="34.333333333333343"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xan-Dp-0je">
+                                        <rect key="frame" x="0.0" y="177.33333333333331" width="200.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Composite"/>
                                         <connections>
                                             <action selector="goToComposite:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BcL-yX-Ohh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqC-Hf-FMg" userLabel="Observer">
-                                        <rect key="frame" x="0.0" y="221.66666666666669" width="190.66666666666666" height="34.333333333333314"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqC-Hf-FMg">
+                                        <rect key="frame" x="0.0" y="221.66666666666669" width="200.33333333333334" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Chain Of Resposibility"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Chain Of Responsibility"/>
                                         <connections>
                                             <action selector="goToChainOfResponsibility:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fqR-xB-1xm"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGZ-ha-9ax" userLabel="Factory">
+                                        <rect key="frame" x="0.0" y="266" width="200.33333333333334" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Factory Method"/>
+                                        <connections>
+                                            <action selector="goToFactory:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="600-8O-ggh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3z1-Dr-kfm" userLabel="Proxy">
+                                        <rect key="frame" x="0.0" y="310.33333333333337" width="200.33333333333334" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Proxy"/>
+                                        <connections>
+                                            <action selector="goToProxy:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Abf-cr-4SM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWQ-Mz-vyp" userLabel="Bridge">
+                                        <rect key="frame" x="0.0" y="354.66666666666663" width="200.33333333333334" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Bridge"/>
+                                        <connections>
+                                            <action selector="goToBridge:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BZV-se-vI8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Design Patterns in Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2p-bF-ykY">
+                                <rect key="frame" x="69.333333333333329" y="143" width="254.33333333333337" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="B2p-bF-ykY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="Ei6-En-wPt"/>
                             <constraint firstItem="DLN-Ir-X24" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ZaO-nY-Ohy"/>
                             <constraint firstItem="DLN-Ir-X24" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="ejL-kR-oOF"/>
+                            <constraint firstItem="B2p-bF-ykY" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="qqm-oI-pQc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iSn-YI-p11"/>
@@ -86,6 +118,9 @@
                         <segue destination="ywj-LW-bN1" kind="show" identifier="GoToBuilder" id="CRR-kl-c6m"/>
                         <segue destination="Gg7-hd-Nr5" kind="show" identifier="GoToComposite" id="Dv2-ng-gQd"/>
                         <segue destination="LFe-qW-5IO" kind="show" identifier="GoToChainOfResponsibility" id="So7-Yk-b5j"/>
+                        <segue destination="OrL-Dq-RM5" kind="show" identifier="GoToFactory" id="FT9-kU-3fu"/>
+                        <segue destination="fCM-FN-RyG" kind="show" identifier="GoToProxy" id="d1m-e6-50W"/>
+                        <segue destination="w8Z-uP-Nj7" kind="show" identifier="GoToBridge" id="3ch-wl-yRX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -100,7 +135,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huD-62-blg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1575" y="-61"/>
+            <point key="canvasLocation" x="1601" y="-226"/>
         </scene>
         <!--Decorator-->
         <scene sceneID="6ZC-45-lKm">
@@ -110,7 +145,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBX-rs-x6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584" y="-2"/>
+            <point key="canvasLocation" x="1610" y="-167"/>
         </scene>
         <!--Builder-->
         <scene sceneID="v24-JL-6iR">
@@ -120,7 +155,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdl-pQ-nEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1571" y="118"/>
+            <point key="canvasLocation" x="1597" y="-47"/>
         </scene>
         <!--Composite-->
         <scene sceneID="Hwz-DJ-vrC">
@@ -130,7 +165,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dv5-h2-U26" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1588" y="180"/>
+            <point key="canvasLocation" x="1614" y="15"/>
         </scene>
         <!--ChainOfResponsibility-->
         <scene sceneID="bu5-Qq-8kn">
@@ -140,7 +175,37 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQW-BA-M6o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="234"/>
+            <point key="canvasLocation" x="1665" y="69"/>
+        </scene>
+        <!--Factory-->
+        <scene sceneID="AhM-T0-95X">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Factory" id="OrL-Dq-RM5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AR4-DG-Au1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97u-Ac-Lhf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605" y="124"/>
+        </scene>
+        <!--Proxy-->
+        <scene sceneID="Qju-mh-YI1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Proxy" id="fCM-FN-RyG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ShU-Ut-KOY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ZJ-TD-oxI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589" y="174"/>
+        </scene>
+        <!--Bridge-->
+        <scene sceneID="0ii-ej-xI6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bridge" id="w8Z-uP-Nj7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sRo-vA-VSg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8j-eY-p4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="222"/>
         </scene>
         <!--Observer-->
         <scene sceneID="AJa-hk-CAz">
@@ -150,7 +215,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHJ-5M-JX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="63"/>
+            <point key="canvasLocation" x="1605" y="-102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pKJ-VT-0ik">

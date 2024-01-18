@@ -33,4 +33,16 @@ class MenuViewController: UIViewController {
     @IBAction func goToChainOfResponsibility(_ sender: Any) {
         performSegue(withIdentifier: "GoToChainOfResponsibility", sender: nil)
     }
+    
+    @IBAction func goToFactory(_ sender: Any) {
+        performSegue(withIdentifier: "GoToFactory", sender: nil)
+    }
+    
+    @IBAction func goToProxy(_ sender: Any) {
+        performSegue(withIdentifier: "GoToProxy", sender: nil)
+    }
+    
+    @IBAction func goToBridge(_ sender: Any) {
+        performSegue(withIdentifier: "GoToBridge", sender: nil)
+    }
 }

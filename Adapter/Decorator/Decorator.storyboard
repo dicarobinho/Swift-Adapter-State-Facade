@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iPS-tF-F3t">
-                                <rect key="frame" x="96.666666666666686" y="314.33333333333331" width="200" height="248.66666666666669"/>
+                                <rect key="frame" x="96.666666666666686" y="336.33333333333331" width="200" height="248.66666666666669"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naked" translatesAutoresizingMaskIntoConstraints="NO" id="12f-ib-Zn4">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
@@ -58,6 +59,23 @@
                             <constraint firstItem="iPS-tF-F3t" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="g1Z-Nh-cj8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="GF9-jR-1ox">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xSh-mL-33A">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Q7R-gk-CMV">
+                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Decorator"/>
+                                <connections>
+                                    <action selector="openInfo:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Tko-F6-Oqw"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="openInfo:" destination="Y6W-OH-hqX" id="9V3-zf-RY3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="decatExhaustButton" destination="yYt-fl-Bv8" id="CaN-Ie-jLX"/>
                         <outlet property="finalExhaustButton" destination="1rk-Ty-X38" id="6jL-p5-Cwl"/>
@@ -66,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="4"/>
+            <point key="canvasLocation" x="965.64885496183206" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>

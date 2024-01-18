@@ -61,4 +61,10 @@ class ChainOfResponsibilityViewController: UIViewController {
             nakedBikeButton.isHidden = false
         }
     }
+    
+    @IBAction func openInfo(_ sender: Any) {
+        if let url = URL(string: "https://refactoring.guru/design-patterns/chain-of-responsibility/swift/example") {
+            UIApplication.shared.open(url)
+        }
+    }
 }

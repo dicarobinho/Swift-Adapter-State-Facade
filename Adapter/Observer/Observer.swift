@@ -49,4 +49,7 @@ class Observable<T>: ObservableProtocol {
         guard let index = self.observers.firstIndex(where: { $0.id == observer.id }) else { return }
         self.observers.remove(at: index)
     }
+    
+    @IBAction func openInfo(_ sender: Any) {
+    }
 }

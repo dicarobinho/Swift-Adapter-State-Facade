@@ -36,4 +36,10 @@ class ObserverViewController: UIViewController, ObserverProtocol {
     func onValueChanged(_ value: Any?) {
         cartLabel.text = "Cart: \(value ?? 0)"
     }
+    
+    @IBAction func openInfo(_ sender: Any) {
+        if let url = URL(string: "https://refactoring.guru/design-patterns/observer/swift/example") {
+            UIApplication.shared.open(url)
+        }
+    }
 }

@@ -34,4 +34,10 @@ class DecoratorViewController: UIViewController {
         infoLabel.text = "Added Decat Exhaust\n HP: \(decatMotorcycleExhaust.getHP())"
         decatExhaustButton.isEnabled = false
     }
+    
+    @IBAction func openInfo(_ sender: Any) {
+        if let url = URL(string: "https://refactoring.guru/design-patterns/decorator/swift/example") {
+            UIApplication.shared.open(url)
+        }
+    }
 }

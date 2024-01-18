@@ -27,7 +27,7 @@ class AdapterViewController: UIViewController {
         nakedBikeLabel.text = "\(nakedBike.doRace())\n HP: \(nakedBike.HP)"
         scooterLabel.text = "\(scooter.doRace())\n HP: \(scooter.HP)"
     }
-    
+
     @IBAction func adaptScooterHP(_ sender: Any) {
         if readyToRace {
             performSegue(withIdentifier: "GoToStateFacade", sender: nil)
@@ -36,6 +36,12 @@ class AdapterViewController: UIViewController {
             scooterLabel.text = "\(ScooterAdapter(scooter).doRace())\n HP: \(scooter.HP)"
             adaptButton.setTitle("Let's race", for: .normal)
             readyToRace = true
+        }
+    }
+    
+    @IBAction func openInfo(_ sender: Any) {
+        if let url = URL(string: "https://refactoring.guru/design-patterns/adapter/swift/example") {
+            UIApplication.shared.open(url)
         }
     }
 }

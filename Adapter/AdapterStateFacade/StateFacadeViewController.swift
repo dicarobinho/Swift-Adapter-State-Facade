@@ -33,4 +33,16 @@ class RaceViewController: UIViewController {
         imageView.downloadImage(at: url!)
         retryImageButton.isHidden = true
     }
+    
+    @IBAction func openStateInfo(_ sender: Any) {
+        if let url = URL(string: "https://refactoring.guru/design-patterns/state/swift/example") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    @IBAction func openFacadeInfo(_ sender: Any) {
+        if let url = URL(string: "https://refactoring.guru/design-patterns/facade/swift/example") {
+            UIApplication.shared.open(url)
+        }
+    }
 }
